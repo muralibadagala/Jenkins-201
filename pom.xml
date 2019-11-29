@@ -14,8 +14,22 @@
     <module>multi-module</module>
     <module>single-module</module>
   </modules>
-
+<servers>
+    <server>
+             <id>JFrog</id>
+             <username>admin</username>
+             <password>password</password>
+    </server>
+</servers>      
+<distributionManagement>
+         <repository>
+                  <id>JFrog</id>
+                  <name>JFrog</name>
+                  <url>http://localhost:8040/artifactory/example-repo-local/</url>
   <prerequisites>
     <maven>3.0.3</maven>
   </prerequisites>
+
+         
+         
 </project>
